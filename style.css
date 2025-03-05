@@ -6,14 +6,14 @@
   background: url('button-image.png') center/cover no-repeat;
   cursor: pointer;
   outline: none;
-  -webkit-tap-highlight-color: transparent; /* Отключает стандартную подсветку на устройствах iOS/Android */
-  -webkit-appearance: none; /* Сбрасывает стандартное оформление кнопки в iOS */
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-appearance: none; 
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 #playButton:active {
-  transform: scale(0.95); /* Эффект нажатия: уменьшение размера */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Дополнительная тень (по желанию) */
+  transform: scale(0.95); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #playButton:focus {
@@ -21,7 +21,7 @@
   box-shadow: none;
 }
 
-/* Для Firefox: сброс внутренних отступов и границ при фокусе */
+
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
