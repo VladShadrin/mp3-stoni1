@@ -3,7 +3,7 @@
   height: 90vmin;
   border-radius: 50%;
   border: none;
-  background: url('amnyam.png') center/cover no-repeat;
+  background: #222; url('amnyam.png') center/cover no-repeat;
   cursor: pointer;
   outline: none;
   -webkit-tap-highlight-color: transparent; 
