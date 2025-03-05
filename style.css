@@ -41,3 +41,31 @@ body, html {
   -webkit-tap-highlight-color: transparent; 
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+#playButton {
+  width: 90vmin;
+  height: 90vmin;
+  border-radius: 50%;
+  border: none;
+  background: url('button-image.png') center/cover no-repeat;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* отключает подсветку при касании */
+  -webkit-appearance: none;  /* сбрасывает стандартное оформление в iOS */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#playButton:active {
+  transform: scale(0.95); /* эффект нажатия */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#playButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Дополнительно для Firefox */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
