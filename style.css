@@ -21,3 +21,8 @@ body, html {
   background: url('amnyam.png') center/cover no-repeat;
   outline: none;
 }
+
+
+#playButton:active {
+  background-color: inherit;
+}
