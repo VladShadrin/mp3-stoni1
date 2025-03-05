@@ -1,35 +1,3 @@
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: #222; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#playButton {
-
-  width: 90vmin;
-  height: 90vmin;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background: url('amnyam.png') center/cover no-repeat;
-  outline: none;
-}
-
-
-#playButton:active {
-  background-color: inherit;
-}
-#playButton:active {
-  transform: scale(0.95); 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-}
 #playButton {
   width: 90vmin;
   height: 90vmin;
@@ -38,25 +6,14 @@ body, html {
   background: url('button-image.png') center/cover no-repeat;
   cursor: pointer;
   outline: none;
-  -webkit-tap-highlight-color: transparent; 
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-#playButton {
-  width: 90vmin;
-  height: 90vmin;
-  border-radius: 50%;
-  border: none;
-  background: url('button-image.png') center/cover no-repeat;
-  cursor: pointer;
-  outline: none;
-  -webkit-tap-highlight-color: transparent; 
-  -webkit-appearance: none; 
+  -webkit-tap-highlight-color: transparent; /* Отключает стандартную подсветку на устройствах iOS/Android */
+  -webkit-appearance: none; /* Сбрасывает стандартное оформление кнопки в iOS */
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 #playButton:active {
-  transform: scale(0.95);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95); /* Эффект нажатия: уменьшение размера */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Дополнительная тень (по желанию) */
 }
 
 #playButton:focus {
@@ -64,7 +21,7 @@ body, html {
   box-shadow: none;
 }
 
-
+/* Для Firefox: сброс внутренних отступов и границ при фокусе */
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
