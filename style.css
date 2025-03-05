@@ -49,13 +49,13 @@ body, html {
   background: url('button-image.png') center/cover no-repeat;
   cursor: pointer;
   outline: none;
-  -webkit-tap-highlight-color: transparent; /* отключает подсветку при касании */
-  -webkit-appearance: none;  /* сбрасывает стандартное оформление в iOS */
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-appearance: none; 
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 #playButton:active {
-  transform: scale(0.95); /* эффект нажатия */
+  transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -64,7 +64,7 @@ body, html {
   box-shadow: none;
 }
 
-/* Дополнительно для Firefox */
+
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
